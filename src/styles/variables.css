@@ -1,0 +1,27 @@
+:root {
+  /* Colors */
+  --color-bg: #050505;
+  --color-surface: #101010;
+  --color-card: rgba(255, 255, 255, 0.04);
+
+  --color-primary: #ffffff;
+  --color-secondary: #9ca3af;
+  --color-accent: #ff6b35;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Layout */
+  --container: 1320px;
+  --radius: 22px;
+
+  /* Effects */
+  --glass: blur(20px);
+  --shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+
+  /* Transition */
+  --transition: 300ms ease;
+} 
