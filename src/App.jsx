@@ -3,6 +3,7 @@ import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
+import Tools from "./components/tools/Tools";
 import Contact from "./components/contact/Contact";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Projects />
       <Services />
+      <Tools />
       <Contact />
     </main>
   );

@@ -58,7 +58,7 @@ export default function Contact() {
             text-[#ff5c35]
           "
         >
-          04 / Contact
+          05 / Contact
         </span>
       </div>
 
@@ -95,13 +95,9 @@ export default function Contact() {
             xl:text-[9rem]
           "
         >
-          <span className="block">
-            LET'S WORK
-          </span>
+          <span className="block">LET'S WORK</span>
 
-          <span className="block text-[#ff5c35]">
-            TOGETHER.
-          </span>
+          <span className="block text-[#ff5c35]">TOGETHER.</span>
         </h2>
 
         {/* Description */}
@@ -151,7 +147,6 @@ export default function Contact() {
           "
         >
           LET'S TALK
-
           <ArrowUpRight
             size={18}
             strokeWidth={2}
@@ -260,7 +255,6 @@ export default function Contact() {
           </p>
 
           <div className="flex items-center justify-center gap-7">
-
             {/* ================= INSTAGRAM ================= */}
 
             <a
@@ -310,17 +304,10 @@ export default function Contact() {
                   strokeWidth="1.8"
                 />
 
-                <circle
-                  cx="17.4"
-                  cy="6.6"
-                  r="1.15"
-                  fill="currentColor"
-                />
+                <circle cx="17.4" cy="6.6" r="1.15" fill="currentColor" />
               </svg>
 
-              <span>
-                Instagram
-              </span>
+              <span>Instagram</span>
             </a>
 
             {/* ================= YOUTUBE ================= */}
@@ -373,17 +360,11 @@ export default function Contact() {
                   "
                 />
 
-                <path
-                  d="M9.5 8.2L16 12L9.5 15.8V8.2Z"
-                  fill="black"
-                />
+                <path d="M9.5 8.2L16 12L9.5 15.8V8.2Z" fill="black" />
               </svg>
 
-              <span>
-                YouTube
-              </span>
+              <span>YouTube</span>
             </a>
-
           </div>
         </div>
 
@@ -415,9 +396,7 @@ export default function Contact() {
             Available For
           </p>
 
-          <p className="text-sm text-zinc-300">
-            Freelance & Remote Projects
-          </p>
+          <p className="text-sm text-zinc-300">Freelance & Remote Projects</p>
         </div>
       </div>
 
@@ -448,13 +427,9 @@ export default function Contact() {
           md:flex-row
         "
       >
-        <span>
-          © 2026 Ronak Vala
-        </span>
+        <span>© 2026 Ronak Vala</span>
 
-        <span>
-          Video Editor / Visual Storyteller
-        </span>
+        <span>Video Editor / Visual Storyteller</span>
       </div>
     </section>
   );

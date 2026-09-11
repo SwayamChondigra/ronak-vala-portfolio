@@ -3,39 +3,39 @@ import Container from "../ui/Container";
 const services = [
   {
     number: "01",
-    title: "Cinematic Editing",
+    title: "Cinematic Video Editing",
     description:
-      "Story-driven editing with precise pacing, cinematic cuts and seamless transitions.",
+      "Professional editing focused on storytelling, pacing, transitions and cinematic presentation.",
   },
   {
     number: "02",
-    title: "Color Grading",
+    title: "YouTube Video Editing",
     description:
-      "Creating a consistent visual tone that enhances the mood and identity of every frame.",
+      "Engaging long-form edits with strong pacing, clean cuts, graphics and retention-focused storytelling.",
   },
   {
     number: "03",
-    title: "Motion Graphics",
+    title: "Reels & Shorts",
     description:
-      "Clean titles, animations and visual elements that make content more dynamic.",
+      "Fast-paced short-form content designed for Instagram Reels, YouTube Shorts and social media.",
   },
   {
     number: "04",
-    title: "YouTube Editing",
+    title: "Color Correction",
     description:
-      "Engaging edits designed to maintain attention and keep viewers watching.",
+      "Balanced colors, improved tones and consistent visuals that make every shot look polished.",
   },
   {
     number: "05",
-    title: "Reels & Shorts",
+    title: "Photo Editing",
     description:
-      "Fast-paced vertical content built for Instagram, YouTube Shorts and social media.",
+      "Professional photo enhancement, retouching and color adjustments for personal and commercial use.",
   },
   {
     number: "06",
-    title: "Commercial Editing",
+    title: "Poster & Creative Design",
     description:
-      "Polished promotional videos designed around strong visuals and brand storytelling.",
+      "Eye-catching posters, thumbnails and promotional creatives for brands, events and social media.",
   },
 ];
 
