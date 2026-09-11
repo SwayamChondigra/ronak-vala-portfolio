@@ -1,0 +1,103 @@
+/* Hero Fade In Animation */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-fade-1 {
+  opacity: 0;
+  animation: heroFadeUp 0.8s ease-out 0.2s forwards;
+}
+
+.hero-fade-2 {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease-out 0.35s forwards;
+}
+
+.hero-fade-3 {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease-out 0.5s forwards;
+}
+
+.hero-fade-4 {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease-out 0.65s forwards;
+}
+
+.hero-fade-5 {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease-out 0.8s forwards;
+}
+
+/* Scroll Reveal Animation */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered cards */
+
+.scroll-reveal-card {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.scroll-reveal-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal-card:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.scroll-reveal-card:nth-child(2) {
+  transition-delay: 0.12s;
+}
+
+.scroll-reveal-card:nth-child(3) {
+  transition-delay: 0.19s;
+}
+
+.scroll-reveal-card:nth-child(4) {
+  transition-delay: 0.26s;
+}
+
+.scroll-reveal-card:nth-child(5) {
+  transition-delay: 0.33s;
+}
+
+.scroll-reveal-card:nth-child(6) {
+  transition-delay: 0.40s;
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

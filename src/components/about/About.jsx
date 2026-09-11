@@ -5,6 +5,7 @@ export default function About() {
     <section
       id="about"
       className="
+      scroll-reveal
     relative
     overflow-hidden
     bg-[#050505]

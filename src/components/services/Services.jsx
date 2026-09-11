@@ -44,6 +44,7 @@ export default function Services() {
     <section
       id="services"
       className="
+      scroll-reveal
         relative
         overflow-hidden
         bg-[#050505]

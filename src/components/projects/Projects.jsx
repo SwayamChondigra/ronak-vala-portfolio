@@ -44,6 +44,7 @@ export default function Projects() {
     <section
       id="projects"
       className="
+      scroll-reveal
         relative
         overflow-hidden
         bg-black

@@ -1,5 +1,63 @@
 import Container from "../ui/Container";
 
+function ToolLogo({ name }) {
+  if (name === "Adobe Premiere Pro") {
+    return (
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-[#1d1235]">
+        <span className="text-lg font-semibold text-[#d8b4fe]">
+          Pr
+        </span>
+      </div>
+    );
+  }
+
+  if (name === "CapCut") {
+    return (
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-black overflow-hidden">
+        <img
+          src="/images/capcut-logo.png"
+          alt="CapCut"
+          className="h-7 w-7 object-contain"
+        />
+      </div>
+    );
+  }
+
+  if (name === "Canva") {
+    return (
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-black overflow-hidden">
+        <img
+          src="/images/canva-logo.jpg"
+          alt="Canva"
+          className="h-8 w-8 object-contain"
+        />
+      </div>
+    );
+  }
+
+  if (name === "Adobe Photoshop") {
+    return (
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-[#001e36]">
+        <span className="text-lg font-semibold text-[#31a8ff]">
+          Ps
+        </span>
+      </div>
+    );
+  }
+
+  if (name === "Adobe Lightroom") {
+    return (
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-[#001e36]">
+        <span className="text-lg font-semibold text-[#31a8ff]">
+          Lr
+        </span>
+      </div>
+    );
+  }
+
+  return null;
+}
+
 const tools = [
   {
     number: "01",
@@ -64,30 +122,8 @@ function ToolCard({ tool }) {
       </span>
 
       {/* Tool Logo */}
-      <div
-        className="
-          mt-7
-          flex
-          h-10
-          w-10
-          items-center
-          justify-center
-          rounded-lg
-          border
-          border-white/10
-          bg-white/[0.03]
-          transition-all
-          duration-300
-          group-hover:border-[#ff5c35]/30
-        "
-      >
-        <span className="font-['Bebas_Neue'] text-lg text-white">
-          {tool.name === "Adobe Premiere Pro" && "Pr"}
-          {tool.name === "CapCut" && "CC"}
-          {tool.name === "Canva" && "Ca"}
-          {tool.name === "Adobe Photoshop" && "Ps"}
-          {tool.name === "Adobe Lightroom" && "Lr"}
-        </span>
+      <div className="mt-7">
+        <ToolLogo name={tool.name} />
       </div>
 
       {/* Arrow */}
@@ -160,6 +196,7 @@ export default function Tools() {
     <section
       id="tools"
       className="
+      scroll-reveal
         relative
         w-full
         overflow-hidden
@@ -240,7 +277,7 @@ export default function Tools() {
           {tools.map((tool, index) => (
             <div
               key={tool.number}
-              className={index >= 3 ? "lg:translate-x-12" : ""}
+              className="scroll-reveal-card"
             >
               <ToolCard tool={tool} />
             </div>
